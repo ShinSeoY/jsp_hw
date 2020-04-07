@@ -9,13 +9,9 @@
 <style>
 table { border-collapse: collapse; }
 td { border: 1px solid gray; padding:2px 3px; }
-
 </style>
 
-
-
 <body>
-
 
 <table>
 <% 
@@ -29,10 +25,6 @@ for (int i=1; i <= 9; ++i) {
    }
 %>
 </table>
-
-
-
-
 
 
 </body>
