@@ -13,27 +13,23 @@ td {border:1px solid;padding:4px;}
 </style>
 
 <body>
+
 <table>
 
 <% for(int i=2;i<=9;i++){%>
 <% if(i%4==2){ %>
-<% out.print("<tr>"); %>
+<tr>
 <%} %>
 <td><% for(int j=1;j<=9;j++){%>
 <% out.print(i+" x "+j+" = "+i*j+"<br/>"); %>
 <%} %>
 </td>
 <% if(i%4==1){ %>
-<% out.print("</tr>"); %>
+</tr>
 <%} %>
 <%} %>
-
-
-
 
 </table>
-
-
 
 </body>
 </html>

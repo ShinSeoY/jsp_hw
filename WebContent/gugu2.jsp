@@ -13,7 +13,9 @@ td {border:1px solid;padding:4px;}
 </style>
 
 <body>
+
 <table>
+
 <tr>
 <% for(int i=2;i<=9;i++){%>
 <td><% for(int j=1;j<=9;j++){%>
@@ -23,12 +25,7 @@ td {border:1px solid;padding:4px;}
 <%} %>
 </tr>
 
-
-
-
 </table>
-
-
 
 </body>
 </html>
