@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <% String num=request.getParameter("number");
-	if(num==null)
-		num="one";
+if (num==null)
+	num="one";
 
 %>
 <!DOCTYPE html>
@@ -22,7 +22,12 @@ two
 <input type="radio" name="number" value="three"<%=(num.equals("three"))?"checked":""%>/>
 three
 <div>
-<input type="text" name="num" value="<%=num %>"/>
+<select name="num"/>
+<option value="one" <%=(num.equals("one"))?"selected":""%> />one</option>
+<option value="two" <%=(num.equals("two"))?"selected":""%>/>two</option>
+<option value="three" <%=(num.equals("three"))?"selected":""%>/>three</option>
+</select>
+
 </div>
 <div>
 <input type="submit" name="result" value="ok"/>
