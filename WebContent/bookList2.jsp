@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List, book.*" %>
 <%
-List<Book> list = BookDAO.findAll();
+String srchText = request.getParameter("srchText");
+if (srchText ==null)
+	srchText="";
+List<Book> list = BookDAO.findByName(srchText);
 %>
 <!DOCTYPE html>
 <html>
@@ -13,12 +16,19 @@ List<Book> list = BookDAO.findAll();
     table{ border-collapse: collapse; width: 100%; }
     td, th { padding: 4px; border: 1px solid lightgray; }
     td:nth-child(2),td:nth-child(4) { text-align: center; }
+    form{ margin:5px; }
   </style>
 </head>
 <body>
 <div class="container">
 
-  <h1>책목록</h1>
+<h1>책목록</h1>
+<form>
+저자
+<input type="text" name="srchText" value="<%=srchText %>" placeholder="검색조건"/>
+<input type="submit" value="조회"/>
+</form>  
+  
   
   <table class="table table-bordered table-condensed">
       <thead>
