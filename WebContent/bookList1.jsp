@@ -12,7 +12,7 @@ List<Book> list = BookDAO.findAll();
     thead th { background-color: #eee; }
     table{ border-collapse: collapse; width: 100%; }
     td, th { padding: 4px; border: 1px solid lightgray; }
-    td:nth-child(2),td:nth-child(4) { text-align: center; }
+    td:nth-child(4) { text-align: center; }
   </style>
 </head>
 <body>
