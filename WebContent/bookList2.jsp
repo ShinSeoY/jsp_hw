@@ -15,8 +15,9 @@ List<Book> list = BookDAO.findByName(srchText);
     thead th { background-color: #eee; }
     table{ border-collapse: collapse; width: 100%; }
     td, th { padding: 4px; border: 1px solid lightgray; }
-    td:nth-child(2),td:nth-child(4) { text-align: center; }
+    td:nth-child(4) { text-align: center; }
     form{ margin:5px; }
+    [name=button]{ padding:5px 25px;}
   </style>
 </head>
 <body>
@@ -26,7 +27,9 @@ List<Book> list = BookDAO.findByName(srchText);
 <form>
 저자
 <input type="text" name="srchText" value="<%=srchText %>" placeholder="검색조건"/>
-<input type="submit" value="조회"/>
+<label>
+<input type="submit" name="button" value="조회"/>
+</label>
 </form>  
   
   
