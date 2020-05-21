@@ -5,39 +5,36 @@ public class Professor {
 	    int id;
 	    String professorName;
 	    int departmentId;
-		/**
-		 * @return the id
-		 */
+	    String departmentName;
+
+		public String getDepartmentName() {
+			return departmentName;
+		}
+
+		public void setDepartmentName(String departmentName) {
+			this.departmentName = departmentName;
+		}
+
 		public int getId() {
 			return id;
 		}
-		/**
-		 * @param id the id to set
-		 */
+
 		public void setId(int id) {
 			this.id = id;
 		}
-		/**
-		 * @return the professorName
-		 */
+
 		public String getProfessorName() {
 			return professorName;
 		}
-		/**
-		 * @param professorName the professorName to set
-		 */
+
 		public void setProfessorName(String professorName) {
 			this.professorName = professorName;
 		}
-		/**
-		 * @return the departmentId
-		 */
+
 		public int getDepartmentId() {
 			return departmentId;
 		}
-		/**
-		 * @param departmentId the departmentId to set
-		 */
+
 		public void setDepartmentId(int departmentId) {
 			this.departmentId = departmentId;
 		}
