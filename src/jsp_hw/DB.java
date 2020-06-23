@@ -1,4 +1,4 @@
-package jdbc1;
+package jsp_hw;
 
 import java.sql.Connection;
 import java.sql.SQLException;

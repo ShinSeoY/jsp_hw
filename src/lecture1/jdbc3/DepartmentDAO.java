@@ -1,4 +1,4 @@
-package department;
+package lecture1.jdbc3;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jsp_hw.DB;
+
 public class DepartmentDAO {
 
     public static List<Department> findAll() throws Exception {
@@ -25,5 +26,4 @@ public class DepartmentDAO {
         }
     }
 }
-
 

@@ -7,8 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import jdbc1.DB;
-
+import jsp_hw.DB;
 public class BookDAO {
 
 	private static Book getBookFrom(ResultSet resultSet) throws SQLException{

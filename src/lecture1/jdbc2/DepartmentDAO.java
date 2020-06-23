@@ -1,4 +1,4 @@
-package department;
+package lecture1.jdbc2;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,5 +25,4 @@ public class DepartmentDAO {
         }
     }
 }
-
 

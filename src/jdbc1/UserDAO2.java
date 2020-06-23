@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import jsp_hw.DB;
 public class UserDAO2 {
 
     public static List<User> findAll() throws Exception {
